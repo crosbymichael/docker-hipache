@@ -110,6 +110,9 @@ func main() {
 	}
 	var config Config
 	configPath := flag.String("conf", path.Join(cwd, "docker-hipache.toml"), "Path to the toml config file")
+
+	flag.Parse()
+
 	if _, err := toml.DecodeFile(*configPath, &config); err != nil {
 		log.Fatalf("Could not load config: %s", err)
 		return
