@@ -1,4 +1,5 @@
-redis = "localhost:6379"
+redisproto = "tcp"
+redisaddr = ":6379"
  
 [routes]
     [crosbymichael:latest]
