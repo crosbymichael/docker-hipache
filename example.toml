@@ -1,0 +1,6 @@
+redis = "localhost:6379"
+ 
+[routes]
+    [crosbymichael:latest]
+    hostname = [ "crosbymichael.com" ]
+    port = "80"
